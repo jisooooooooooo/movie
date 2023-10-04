@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+p{
+  font-size: 11px;
+  padding-top: 7px;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#22254B;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  width: 200px;
+  margin: 10px;
+  background-color: #373B69;
+  color: white;
+  font-size: 10px;
+  
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.movie-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+
