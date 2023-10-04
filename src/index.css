@@ -21,6 +21,7 @@ p{
   justify-content: center;
 }
 
+
 .movie-card {
   width: 200px;
   margin: 10px;
@@ -42,3 +43,37 @@ p{
 }
 
 
+.movie-card {
+  position: relative;
+  width: 220px;
+  margin: 10px;
+  overflow: hidden;
+  
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+
+}
+
+.overlay img {
+  height: 100%;
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: #fff; 
+  display: none;
+}
+
+.movie-card:hover .description {
+  display: block;
+  background-color: #10121F;
+}
