@@ -1,6 +1,13 @@
 import React, { useState } from "react";
+import {
+  MovieCard,
+  Content,
+  CardImage,
+  Overlay,
+  Description,
+} from "./Movie.style";
 
-function Movie({ movie }) {
+const Movie = ({ movie }) => {
   const [showDescription, setShowDescription] = useState(false);
 
   const handleMouseEnter = () => {
@@ -12,29 +19,29 @@ function Movie({ movie }) {
   };
 
   return (
-    <div
+    <MovieCard
       className="movie-card"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="overlay">
-        <img
+      <Overlay className="overlay">
+        <CardImage
           src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
           alt={movie.title}
         />
         {showDescription && (
-          <div className="description">
+          <Description className="description">
             <h2>{movie.title}</h2>
             <p>{movie.overview}</p>
-          </div>
+          </Description>
         )}
-      </div>
-      <div className="content">
+      </Overlay>
+      <Content className="content">
         <h2>{movie.title}</h2>
         <p>{movie.vote_average}</p>
-      </div>
-    </div>
+      </Content>
+    </MovieCard>
   );
-}
+};
 
 export default Movie;
