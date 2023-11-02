@@ -5,7 +5,6 @@ import './MovieDetail.css'; // 스타일 파일을 불러옵니다.
 export default function MovieDetail() {
   const { title } = useParams();
 
-  // 네비게이션을 통해 전달된 상세 정보를 추출
   const location = useLocation();
   const movie = location.state;
 

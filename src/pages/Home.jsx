@@ -21,7 +21,7 @@ class Home extends Component {
       <div className="home">
         {this.state.showAd && <Ad />}
 
-        <button onClick={this.handleToggleClick}>
+        <button  onClick={this.handleToggleClick}>
           {this.state.showAd ? "광고 안 보기" : "광고 보이기"}
         </button>
       </div>
