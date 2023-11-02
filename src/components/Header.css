@@ -1,0 +1,26 @@
+.header {
+  background: #22254b;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}

@@ -13,7 +13,7 @@ export const Paragraph = styled.p`
 export const AppContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  background-color: #22254b;
+  background-color: #ffffff;
   justify-content: center;
   align-items: center;
 `;
