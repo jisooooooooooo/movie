@@ -6,6 +6,8 @@ import Header from "../src/components/Header";
 import Home from "../src/pages/Home";
 import { movies } from "./movieDummy";
 import Celebrity from "../src/pages/Celebrity";
+import Tv from "../src/pages/TV";
+import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -20,7 +22,10 @@ function App() {
             path="/movie/:title" 
             element={<MovieDetail />} 
           />
+          <Route path="/tv" element={<Tv />} />
+
           <Route path="/celebrity" element={<Celebrity />} />
+          <Route path="/login" element={<Login />} /> 
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

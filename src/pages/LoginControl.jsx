@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './LoginControl.css';
+import { Link } from "react-router-dom";
 
 function UserGreeting() {
   return <div>환영합니다!!</div>;
@@ -23,7 +24,8 @@ function LoginControl() {
   const button = isLoggedIn ? (
     <button onClick={handleLogoutClick}>로그아웃</button>
   ) : (
-    <button onClick={handleLoginClick}>로그인</button>
+    
+    <Link to="/login" className="login-btn" onClick={handleLoginClick}>로그인</Link>
   );
 
   return (
