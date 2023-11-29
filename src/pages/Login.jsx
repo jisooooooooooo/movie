@@ -41,7 +41,7 @@ const Login = () => {
   const isSubmitDisabled = !isEmailValid(email) || !isPasswordValid(password);
 
   return (
-    <div className="login-container"> {/* 스타일 클래스 적용 */}
+    <div className="login-container"> 
       <h1 className='title'>이메일과 비밀번호를 입력해주세요</h1>
       <div className='email-box'>
         <label htmlFor="email">이메일 주소</label>
